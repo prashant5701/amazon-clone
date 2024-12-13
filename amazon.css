@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #131921;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.logo,.address,.searchContainer,.menu{
+    /* border: 1px solid white;     */
+    height: 90%;
+    /* border-radius: 5px; */
+
+}
+.logo{
+    width: 10%;
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.address{
+    width: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.address>span>img{
+    height: 22px;
+    width: 24px;
+}
+
+ .address>p{
+    font-size: 12px;
+    color: rgb(179, 177, 177);
+}
+
+.address>p>span{
+color: white;
+font-size: 14px;
+font-weight: 700;
+
+} 
+
+.searchContainer{
+    width:60%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+}
+.menu{
+    width: 25%;
+}
+
+.logo:hover,.address:hover,.searchContainer:hover{
+    border: 1px solid white;
+}
+
+
+.searchContainer>.searchbar{
+    /* border: 1px solid white;  */
+  height: 80%;
+  width: 98%;   
+  display: flex; /* this is used to remove space between select and search bar   */
+  /* border-radius: 15px; */
+}
+.searchContainer>.searchbar>select{
+    height: 100%;
+    width: 50px;
+    background-color: gainsboro;
+    border: none;
+    outline: none;
+    padding: 2px 6px ;
+    border-radius: 10px 0px 0px 10px;
+}
+.searchContainer>.searchbar>select>option{
+    background-color: white;
+}
+.searchContainer>.searchbar>input{
+    height: 100%;
+    width: 90%;
+    padding: 0px 50px;
+    border: none;
+    outline: none;
+}
+.searchContainer>.searchbar:focus-within{
+border: 2px solid rgb(254,189,105);
+box-shadow: 0 0 5px rgb(254,189,105);
+
+}
+.searchContainer>.searchbar>button{
+    background-color: rgb(254,189,105);
+    padding: 5px;
+    border: none;
+    width: 5%;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 0px ;
+}
+.searchContainer>.searchbar>button>img{
+    height: 15px;
+    width: 15px;
+}
+
+.menu{
+    display: flex;
+}
+.menu>select{
+    background-color: rgb(19,25,33);
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    
+}
+.menu>.return{
+    /* border: 2px solid green; */
+    padding: 5px 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.menu>.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    padding: 0 5px;
+    
+}
+
+.options{
+    height:40px;
+    width: 100%;
+    background-color: #232F3E ;
+}
+
+
+
+
+
+/* ==========================================================navbar css ends here =========================================================== */
+
+.container1{
+/* border: 2px solid red; */
+height: 100vh;
+width: 100% ;
+background-image: linear-gradient(transparent, transparent,#faffff9d),url(./images/container1_img1.jpg);
+background-position: top;
+/* background-size: contain; */
+background-size: cover ;
+background-repeat: no-repeat;
+}
+
+.container1>.content{
+    width: 95%;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 350px;
+    left:40px;
+    text-align: center;
+    padding: 8px;
+}
+
+.container1>.category1{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid green; */
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.container1>.category1>article{
+    height: 90%;
+    width: 20%;
+    background-color: white;
+    /* color: black; */
+    /* border: 2px solid yellow; */
+    padding: 15px;
+}
+.category1>article>h2{
+    /* color: white; */
+    margin-left: 10px;
+}
+.category1>article>span{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    height: 75%;
+    margin-top: 10px;   
+}
+.category1>article>span>figure{
+    /* border: 2px solid green; */
+    height: 42%;
+    width: 50%;
+
+}
+.category1>article>span>figure>figcaption{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 650;
+}
+
+.category1>article>span>figure>img
+{
+    border: 2px solid pink;
+    height: 100%;
+    width: 100%;
+}
+
+/* =======================================================category 1 css ends================================================ */
+
+.category2{
+    height: 380px;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 20px;
+    background-image: linear-gradient(rgb(152,224,187),rgb(227,230,230));
+   
+}
+.category2>.inside1_categoty2{
+    background-color: white;
+    padding: 20px;
+    width: 94%;
+    margin: 0px auto;
+    /* border-radius: 15px; */
+}
+
+.category2>.inside1_categoty2>h2{
+    margin-bottom: 5px;
+}
+
+.category2>.inside1_categoty2>.inside2_categoty2{
+    height: 240px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+
+    
+}
+.category2>.inside1_categoty2>.inside2_categoty2>article{
+   
+    /* border: 2px solid green; */
+    height: 95%;
+    width: 14%; 
+    padding: 0px 5px;
+}
+
+.category2>.inside1_categoty2>.inside2_categoty2>article>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+     
+    
+}
+
+
+/* ==========================================================================Above css ends here and footer css starts here ============================================== */
+
+
+footer{
+    /* border: 2px solid red; */
+    height: 550px;
+    background-color: rgb(35,47,62);
+    color: white;
+}
+footer>h2{
+    /* border: 2px solid rgb(175, 175, 26); */
+    background-color: rgb(55,71,90);
+    text-align: center;
+    font-size: 15px ;
+    font-weight: 100;
+    padding: 10px ;
+}
+footer>.container3{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+footer>.container3>ul{
+    list-style: none;
+    text-decoration: none;
+    /* border: 2px solid pink; */
+    margin-top: 50px;
+}
+footer>.container3>ul>li:first-child{
+    font-size: 18px;
+    font-weight: 700;
+}
+footer>.container3>ul>li{
+    margin: 15px;
+    gap: 50px;
+    font-size: 12px;
+}
+
+/* =================================================================footer section container 4======================================================= */
+
+
+.container4{
+    height: 100px;
+    border: 2px solid #3a4553;
+
+}
+.container4>img{
+    height: 50px;
+    width: 50px;
+}
+.container4>span{
+    border: 2px solid red;
+    margin: 50px;
+    padding: 10px;
+}
